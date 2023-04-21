@@ -1,0 +1,17 @@
+<style>
+  .promo_banner {
+    width: 100%;
+    padding: 7px 1%;
+    fint-size: 18px;
+    text-align: center;
+    background-color: #333333;
+    color: white;
+    
+  }
+</style>
+
+{% if settings.promo_banner %}
+<div class="promo_banner">
+  {{ settings.promo_text }}
+</div>
+  {% endif %}
